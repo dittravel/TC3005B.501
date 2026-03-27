@@ -1,0 +1,56 @@
+# ------------------------------------------------------------------
+# Bug Issue Template
+# Use this template to report unexpected problems or behaviors
+# that need to be fixed.
+#
+# Bugs should include:
+# - Clear description of the problem
+# - Steps to reproduce
+# - Expected vs actual behavior
+# - Environment details
+#
+# This template automatically:
+# - Prefixes the issue title with [Bug]
+# - Adds the issue to the dittravel project board
+# ------------------------------------------------------------------
+
+name: Bug
+description: An unexpected problem or behavior that needs to be fixed.
+title: "[Bug]: "
+type: 3-Bug
+projects: dittravel
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Clear explanation of the bug or unexpected behavior.
+      placeholder: Describe the problem that occurred.
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Provide detailed information about the bug.
+      placeholder: |
+        - Steps to reproduce:
+          1. Go to...
+          2. Click on...
+          3. See error
+        - Expected behavior: What should happen
+        - Actual behavior: What actually happens
+        - Environment: Browser, OS, version, etc.
+        - Screenshots or logs if applicable
+    validations:
+      required: true
+  - type: textarea
+    id: checklist
+    attributes:
+      label: Checklist to complete issue
+      description: Steps to fix this bug.
+      placeholder: |
+        - Investigate the root cause
+        - Implement the fix
+        - Test the fix
+        - Update tests if needed

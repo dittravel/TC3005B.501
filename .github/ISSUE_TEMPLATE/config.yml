@@ -1,1 +1,8 @@
+# ------------------------------------------------------------------
+# Issue Configuration
+# Disables the ability to create blank issues.
+# All issues must be created using one of the defined templates
+# (e.g., Task, Sub-Task, Bug, Feature, etc.)
+# ------------------------------------------------------------------
+
 blank_issues_enabled: false

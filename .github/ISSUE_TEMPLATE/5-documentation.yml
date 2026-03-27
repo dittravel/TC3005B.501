@@ -1,0 +1,55 @@
+# ------------------------------------------------------------------
+# Documentation Issue Template
+# Use this template for documentation that needs to be written
+# or updated.
+#
+# Documentation tasks should include:
+# - What documentation needs to be created/updated
+# - Target audience
+# - Scope and content outline
+# - Format and location
+#
+# This template automatically:
+# - Prefixes the issue title with [Documentation]
+# - Adds the issue to the dittravel project board
+# ------------------------------------------------------------------
+
+name: Documentation
+description: Documentation that needs to be written or updated.
+title: "[Documentation]: "
+type: 5-Documentation
+projects: dittravel
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Clear explanation of what documentation needs to be written or updated.
+      placeholder: Describe the documentation task.
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Provide details about the documentation requirements.
+      placeholder: |
+        - Type of documentation: API docs, user guide, README, etc.
+        - Target audience: Developers, users, admins, etc.
+        - Scope: What sections or topics to cover
+        - Current state: What exists already
+        - Location: Where the docs should be placed
+        - Format: Markdown, PDF, web page, etc.
+    validations:
+      required: true
+  - type: textarea
+    id: checklist
+    attributes:
+      label: Checklist to complete issue
+      description: Steps to complete the documentation.
+      placeholder: |
+        - Outline the content structure
+        - Write the documentation
+        - Review for accuracy and clarity
+        - Publish to the appropriate location
+        - Update any related docs or links

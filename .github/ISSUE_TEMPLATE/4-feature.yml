@@ -1,0 +1,54 @@
+# ------------------------------------------------------------------
+# Feature Issue Template
+# Use this template to request new functionality or enhancements
+# to the system.
+#
+# Features should include:
+# - Clear description of the new functionality
+# - Business value or user benefit
+# - Technical requirements
+# - Acceptance criteria
+#
+# This template automatically:
+# - Prefixes the issue title with [Feature]
+# - Adds the issue to the dittravel project board
+# ------------------------------------------------------------------
+
+name: Feature
+description: A new functionality or enhancement to the system.
+title: "[Feature]: "
+type: 4-Feature
+projects: dittravel
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Clear explanation of the new functionality or enhancement.
+      placeholder: Describe the feature to be added.
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Provide detailed requirements for the feature.
+      placeholder: |
+        - User story: As a [user type], I want [functionality] so that [benefit]
+        - Business requirements
+        - Technical specifications
+        - UI/UX considerations
+        - Dependencies or related features
+    validations:
+      required: true
+  - type: textarea
+    id: checklist
+    attributes:
+      label: Checklist to complete issue
+      description: High-level steps to implement this feature.
+      placeholder: |
+        - Design and plan the implementation
+        - Develop the core functionality
+        - Add tests
+        - Update documentation
+        - Deploy and verify

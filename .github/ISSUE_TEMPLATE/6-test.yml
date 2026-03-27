@@ -1,0 +1,55 @@
+# ------------------------------------------------------------------
+# Test Issue Template
+# Use this template for tests that need to be written for existing
+# or new code.
+#
+# Test tasks should include:
+# - What code or functionality to test
+# - Types of tests needed
+# - Test scenarios and edge cases
+# - Testing framework and tools
+#
+# This template automatically:
+# - Prefixes the issue title with [Test]
+# - Adds the issue to the dittravel project board
+# ------------------------------------------------------------------
+
+name: Test
+description: Tests that need to be written for existing or new code.
+title: "[Test]: "
+type: 6-Test
+projects: dittravel
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Clear explanation of what tests need to be written.
+      placeholder: Describe the testing requirements.
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Provide details about the tests to be written.
+      placeholder: |
+        - Code/functionality to test: Specific functions, components, or features
+        - Types of tests: Unit, integration, e2e, performance, etc.
+        - Test scenarios: Happy path, edge cases, error conditions
+        - Testing framework: Jest, Cypress, etc.
+        - Coverage requirements
+        - Dependencies: What needs to be set up first
+    validations:
+      required: true
+  - type: textarea
+    id: checklist
+    attributes:
+      label: Checklist to complete issue
+      description: Steps to write and implement the tests.
+      placeholder: |
+        - Set up test environment and dependencies
+        - Write test cases
+        - Run tests and verify they pass
+        - Add tests to CI/CD pipeline
+        - Update test documentation
